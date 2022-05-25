@@ -243,6 +243,8 @@ index 0000000..f82aa61
 +
 +	if(avctx->pix_fmt ==AV_PIX_FMT_NONE){
 +		 avctx->pix_fmt=AV_PIX_FMT_YUV420P;
++	}else if(avctx-> pix_fmt == AV_PIX_FMT_YUVJ420P){
++		 avctx->pix_fmt=AV_PIX_FMT_YUV420P;
 +	}else if(avctx-> pix_fmt != AV_PIX_FMT_YUV420P){
 +		av_log(avctx, AV_LOG_ERROR, "Invalid Pix_FMT for NVMPI Only yuv420p is supported\n");
 +		return AVERROR_INVALIDDATA;
