@@ -261,14 +261,12 @@ index 0000000..f82aa61
 +}
 +
 +
-+
 +static int nvmpi_close(AVCodecContext *avctx){
 +
 +	nvmpiDecodeContext *nvmpi_context = avctx->priv_data;
 +	return nvmpi_decoder_close(nvmpi_context->ctx);
 +
 +}
-+
 +
 +
 +static int nvmpi_decode(AVCodecContext *avctx,void *data,int *got_frame, AVPacket *avpkt){
